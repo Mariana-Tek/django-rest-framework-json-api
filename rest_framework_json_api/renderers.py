@@ -283,7 +283,7 @@ class JSONRenderer(renderers.JSONRenderer):
                 # serializer_class = utils.get_serializer_from_instance_and_serializer()
                 # serializer_instance = serializer_class(relation_instance_or_manager.all(), many=True, context=context)
 
-                iterable = field.get_attribute(current_serializer.instance)
+                iterable = relation_instance_or_manager.all()
 
 
 
