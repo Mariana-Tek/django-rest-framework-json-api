@@ -163,6 +163,10 @@ class ResourceRelatedField(PrimaryKeyRelatedField):
                                ])
 
 
+    def to_internal_value(self, data):
+        return super(ResourceRelatedField, self).to_internal_value(data['id'])
+
+
 class SerializerMethodResourceRelatedField(ResourceRelatedField):
     def get_attribute(self, instance):
         # check for a source fn defined on the serializer instead of the model
