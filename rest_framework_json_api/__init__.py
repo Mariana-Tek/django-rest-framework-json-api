@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 __title__ = 'djangorestframework-jsonapi'
-__version__ = '3.0.0-mt'
+__version__ = '3.0.2-mt'
 __author__ = ''
 __license__ = 'MIT'
 __copyright__ = ''
